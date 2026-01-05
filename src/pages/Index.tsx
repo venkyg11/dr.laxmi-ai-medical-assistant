@@ -5,6 +5,7 @@ import { DrLaxmiAvatar } from "@/components/DrLaxmiAvatar";
 import { FloatingMedicalIcons } from "@/components/FloatingMedicalIcons";
 import { MedicalDisclaimer } from "@/components/MedicalDisclaimer";
 import { ConsultationScreen } from "@/components/ConsultationScreen";
+import { ThemeToggle } from "@/components/ThemeToggle";
 import { cn } from "@/lib/utils";
 
 type Screen = "landing" | "consultation";
@@ -31,6 +32,9 @@ const Index = () => {
 
   return (
     <div className="min-h-screen flex flex-col relative overflow-hidden">
+      {/* Theme toggle */}
+      <ThemeToggle />
+      
       {/* Floating medical icons background */}
       <FloatingMedicalIcons />
 
