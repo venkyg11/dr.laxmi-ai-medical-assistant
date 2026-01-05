@@ -61,23 +61,6 @@ export function DrLaxmiAvatar({ state = "idle", className, size = "lg" }: DrLaxm
           )}
         />
       </div>
-      
-      {/* Label */}
-      <div className="absolute -bottom-2 left-1/2 -translate-x-1/2 bg-card/90 backdrop-blur-sm px-3 py-1 rounded-full border border-border shadow-soft">
-        <span className="text-xs font-medium text-foreground whitespace-nowrap">Dr. Laxmi AI</span>
-      </div>
-      
-      {/* Status indicator */}
-      <div 
-        className={cn(
-          "absolute bottom-6 right-2 w-4 h-4 rounded-full border-2 border-card transition-colors duration-300",
-          state === "idle" && "bg-green-500",
-          state === "listening" && "bg-primary animate-pulse",
-          state === "speaking" && "bg-accent",
-          state === "concerned" && "bg-destructive",
-          state === "reassuring" && "bg-green-500"
-        )}
-      />
     </div>
   );
 }
